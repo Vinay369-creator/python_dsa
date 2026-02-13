@@ -22,3 +22,12 @@ def search(arr,target):
         if i==arr:   #-->O(1)
             return i
 search(arr,target)
+
+#remove specified elements
+arr=[1,2,5,3,6,8,3,7]
+target=3
+def removele(arr,target):
+    for i in arr:    #-->log(n)
+        if i==arr:   #-->O(1)
+            arr.remove(i)
+removele(arr,target)
