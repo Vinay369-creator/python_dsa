@@ -1,0 +1,22 @@
+ARRAYS
+Arrays are the major basic data structure in the python
+These arrays are used to store the same data type under it.
+The length of the array is variable length becz it change its length
+In python  we can the array with help of  using the list.
+We consider list as an array
+Inside list e have so many built in methods
+
+Insertion methods 
+Append -> it will add the single value or collection data type as a single value and it will adds at the last.
+Extend -> it will add the only collection data type and extract the each and every elements and append them in to the last
+Insert -> it will be insert the value based on the index position. If the index position is large then it will add at the last or if the index position is  small it will add at the first.
+
+Deletion method
+Pop -> it is used to delete the last element  one at a time.
+It will take the one non mandatory argument which is index position.
+Remove  -> it is used to delete the element based on the value .
+If the value is not present it will throw an error
+
+
+
+
