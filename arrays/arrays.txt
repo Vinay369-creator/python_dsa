@@ -15,7 +15,8 @@ Deletion method
 Pop -> it is used to delete the last element  one at a time.
 It will take the one non mandatory argument which is index position.
 Remove  -> it is used to delete the element based on the value .
-If the value is not present it will throw an error
+If the value is not present it will throw an error.
+
 
 
 
