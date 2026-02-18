@@ -17,6 +17,25 @@ It will take the one non mandatory argument which is index position.
 Remove  -> it is used to delete the element based on the value .
 If the value is not present it will throw an error.
 
+TYPES OF ARRAYS
+the array  are classified into two types
+1.ONE DIMENSIONAL ARRAY
+2.TWO DIMENSIONAL ARRAY
+
+1.one dimensional array
+these are the arrays which stores the elements in the single sequences. Each elements are accessed by 
+using the single index which is starting from 0 .
+ex arr=[1,2,3,4,5,6,8]
+
+2. two dimensional arrays
+these are the arrays which is stores the elements in the form of row and column similar to grid or matrix
+ to access the particular elements it always required the two index values one is for row and another is 
+ for columns.
+ ex 
+ arr=[[1,2,3],
+      [5,9,7],
+      [44,53,23]]
+
 
 
 

@@ -77,3 +77,33 @@ def searchEleBinary(arr,target):
 target=6
 retval=searchEleBinary(arr,target)
 
+# program to write the function to get the first and second largest numbers in the array
+arr=[84,66,78,93,91,55,95]
+def largest(arr):
+    mx=0
+    mx2=0
+    for no in arr:
+        if no> mx:
+            mx2=mx
+            mx=no
+        elif mx>no and no>mx2:
+            mx2=no
+    return mx,mx2
+largest(arr)
+
+#program to check whether array contains duplicates or not
+arr[3,5,4,6,7,3,2,1,3,2]
+def isduplicate(arr):
+    for no in range(len(arr)-1):
+        if arr[no] in arr[no+1:]:
+            return True
+    else:
+        return False
+def duplicate(arr):
+    if isduplicate(arr):
+        print('yes it contains the duplicates')
+    else:
+        print('no its not contains the duplicates' )
+
+
+
