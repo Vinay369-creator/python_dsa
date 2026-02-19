@@ -4,7 +4,7 @@ These arrays are used to store the same data type under it.
 The length of the array is variable length becz it change its length
 In python  we can the array with help of  using the list.
 We consider list as an array
-Inside list e have so many built in methods
+The list contains the more built in methods
 
 Insertion methods 
 Append -> it will add the single value or collection data type as a single value and it will adds at the last.
