@@ -30,15 +30,21 @@ class SinglyLinkedList:
     def delFirstNode(self):
         if self.head is None:
             return 'None'
-        self.head=self.head.next
-    
+        else:
+            curr=self.head
+            self.head=self.head.next
+            curr.next=None
+            return curr
+
     def delLastNode(self):
         if self.head is None:
             return "None"     
         current=self.head
         while current.next.next is not None:
             current=current.next
+        delnode=current.next
         current.next=None
+        return delnode
 
     def delIndexPos(self,ip):
         if ip==0:
@@ -54,7 +60,8 @@ class SinglyLinkedList:
 s1=SinglyLinkedList()
 s1.insertdata()
 s1.delFirstNode()
-s1.delLastNode()
+nn=s1.delLastNode()
+print(nn.data)
 s1.delIndexPos(5)
 s1.display()
 
