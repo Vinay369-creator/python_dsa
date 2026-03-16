@@ -121,7 +121,6 @@ def deleteNthNode(head,n):
 # l1.head=deleteNthNode(l1.head,2)
 # l1.display()
 
-
 #--------------------------------------------------------------------------------------------
 #original list
 # 1->2->3->4->5 
@@ -193,3 +192,45 @@ def sort(head):
 # l1.insertMultiple([3, 4, 1, 5, 9, 2, 6])
 # sort(l1.head)
 # l1.display()
+
+#-----------------------------------------------------------------------------------------------
+#remove the nth node form the end of the list
+#ex 1->2->3->4->5
+#n=2         |
+#after  1->2->3->5
+
+def removeNthNode(head,n):
+    dummy=Node(0)
+    dummy.next=head
+    first=dummy
+    second=dummy
+    for _ in range(n+1):
+        first=first.next
+    while first is not None:
+        first=first.next
+        second=second.next
+    second.next=second.next.next
+    return dummy.next
+
+# l1=LinkedList()
+# l1.insertMultiple([1,2,3,4,5])
+# l1.head=removeNthNode(l1.head,2)
+# l1.display()
+
+#-----------------------------------------------------------------------------------------------
+#return the middle node form the list
+#ex 1->2->3->4->5
+#output 3
+
+def middleNode(head):
+    current=head
+    second=head
+    while current and current.next is not None:
+        current=current.next.next
+        second=second.next
+    return second
+
+# l1=LinkedList()
+# l1.insertMultiple([1,2,3,4,5])
+# n1=middleNode(l1.head)
+# print(n1.data)
